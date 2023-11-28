@@ -1,0 +1,43 @@
+/* CSS transitions allows you to change property values smoothly, over a given duration. */
+
+/* how the transition takes place 
+transition-timing-function:
+ease=default
+ease= slow start, fast, slow end
+ease-in= slow start
+ease-out= slow end
+linear= same speed start to end
+ease-in-out=slow start, fast, slow end */
+
+div{
+  width: 100px;
+  height: 100px;
+  background: greenyellow;
+  color: white;
+  margin: 15px;
+  transition: all 1s;
+}
+
+div:hover{
+  transform:translateX(100px) ;
+}
+
+.ease{
+  transition-timing-function: ease;
+}
+
+.linear{
+  transition-timing-function: linear;
+}
+
+.ease-in{
+  transition-timing-function: ease-in;
+}
+
+.ease-out{
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out{
+  transition-timing-function: ease-in-out;
+}
